@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: whitesmoke;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+
+.container {
+  text-align: center;
+}
+.wraper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem;
+}
+.box {
+  width: 300px;
+  height: 300px;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+  padding: 1rem 6rem;
+}
+.middle,
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right {
+  padding: 2rem;
+  text-align: left;
+}
+textarea{
+  padding: 1rem;
+}
+.range {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+hr {
+  height: 1px;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.089);
+  opacity: 30%;
+}
+.label {
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+.colors{
+  display: flex;
+  justify-content: space-between;
+  color: gray;
+}
+.color{
+  display: flex;
+  gap: .2rem;
+  align-items: center;
+}
+@media (max-width: 1100px) {
+  .wraper {
+    flex-direction: column;
+  }
+  .left{
+    min-width: 400px;
+  }
+}
+h2{
+  color: gray;
+  font-size: 1rem;
+}
+.allContent{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
