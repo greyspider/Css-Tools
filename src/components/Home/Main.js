@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import classes from "./Main.module.css";
 const Main = () => {
   return (
@@ -17,11 +17,21 @@ const Main = () => {
           <h1>CSS Tools</h1>
         </div>
         <div className={classes.links}>
-          <Link to="/">Border Radius</Link>
-          <Link to="/box-shadow">Box Shadow</Link>
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+            end
+          >
+            Border Radius
+          </NavLink>
+          <NavLink
+            to="/box-shadow"
+            className={({ isActive }) => (isActive ? "active" : undefined)}
+          >
+            Box Shadow
+          </NavLink>
         </div>
       </div>
-      
     </>
   );
 };
